@@ -19,4 +19,4 @@ $controller .= 'Controller';
 
 $controller = new $controller;
 
-$controller->$method();
+$controller->$method($param);

@@ -9,7 +9,9 @@ class HomeController extends Controller
   */
   public function __construct()
   {
-    var_dump(__CLASS__);
+    $lenguajes_favoritos = array('Javascript', 'Php');
+    $params = array('nombre' => 'Juan', 'lenguajes' => $lenguajes_favoritos);
+    $this->render(__CLASS__, $params);
   }
 
   /**
@@ -17,6 +19,6 @@ class HomeController extends Controller
   */
   public function exec()
   {
-    echo '<h1>Hola mundo!</h1>';
+    
   }
 }

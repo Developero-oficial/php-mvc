@@ -7,12 +7,16 @@ echo '<pre>';
 print_r($router->getUri());
 echo '</pre>';
 
-$controlador = $router->getController();
+$controller = $router->getController();
 $method = $router->getMethod();
 $param = $router->getParam();
-echo "Controlador: {$controlador} </br>";
+echo "Controlador: {$controller} </br>";
 echo "Método: {$method} </br>";
 echo "Param: {$param} </br>";
 
-$controller = new $controlador();
+require PATH_CONTROLLERS . "{$controller}/{$controller}Controller.php";
+$controller .= 'Controller';
+
+$controller = new $controller;
+
 $controller->$method();

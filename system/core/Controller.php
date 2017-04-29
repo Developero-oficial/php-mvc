@@ -2,7 +2,7 @@
 /**
 * Controlador base
 */
-class Controller
+abstract class Controller
 {
   /**
    * @var object
@@ -14,14 +14,11 @@ class Controller
    */
   public function __construct()
   {
-    echo __CLASS__ . ' instanciado';
+    
   }
 
   /**
    * Metodo estándar
    */
-  public function exec()
-  {
-    echo '</br>Ejecutando método exec()</br>';
-  }
+  abstract public function exec();
 }

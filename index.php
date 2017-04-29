@@ -1,6 +1,7 @@
 <?php
 require 'system/config.php';
 require 'system/core/Router.php';
+require 'system/core/Controller.php';
 
 $router = new Router();
 echo '<pre>';
@@ -13,3 +14,6 @@ $param = $router->getParam();
 echo "Controlador: {$controlador} </br>";
 echo "Método: {$method} </br>";
 echo "Param: {$param} </br>";
+
+$controller = new $controlador();
+$controller->$method();

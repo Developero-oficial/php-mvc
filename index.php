@@ -1,4 +1,5 @@
 <?php
+require 'system/config.php';
 require 'system/core/Router.php';
 
 $router = new Router();

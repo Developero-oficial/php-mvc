@@ -5,7 +5,7 @@
 class Controller
 {
   /**
-   * object
+   * @var object
    */
   private $view;
 

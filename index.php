@@ -1,7 +1,6 @@
 <?php
 require 'system/config.php';
-require 'system/core/Router.php';
-require 'system/core/Controller.php';
+require 'system/core/autoload.php';
 
 $router = new Router();
 echo '<pre>';

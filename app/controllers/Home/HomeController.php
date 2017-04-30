@@ -11,11 +11,6 @@ class HomeController extends Controller
   public $nombre;
 
   /**
-   * array 
-   */
-  public $lenguajes_favoritos;
-
-  /**
    * object 
    */
   public $model;
@@ -27,7 +22,6 @@ class HomeController extends Controller
   {
     $this->model = new HomeModel();
     $this->nombre = 'Mundo';
-    $this->lenguajes_favoritos = array('Javascript', 'Php');
   }
 
   /**
@@ -39,11 +33,11 @@ class HomeController extends Controller
   }
 
   /**
-  * Método de ejemplo con parámetro
+  * Método de ejemplo
   */
   public function show()
   {
-    $params = array('nombre' => $this->nombre, 'lenguajes' => $this->lenguajes_favoritos);
+    $params = array('nombre' => $this->nombre);
     $this->render(__CLASS__, $params); 
   }
 

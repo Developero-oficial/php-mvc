@@ -1,4 +1,5 @@
 <?php
+require_once ROOT . '/php-mvc/app/models/Home/HomeModel.php';
 /**
  * Home controller
  */
@@ -15,11 +16,17 @@ class HomeController extends Controller
   public $lenguajes_favoritos;
 
   /**
-   * Inicializa render 
+   * object 
+   */
+  public $model;
+
+  /**
+   * Inicializa valores 
    */
   public function __construct()
   {
-    $this->nombre = 'Juan';
+    $this->model = new HomeModel();
+    $this->nombre = 'Mundo';
     $this->lenguajes_favoritos = array('Javascript', 'Php');
   }
 
@@ -41,12 +48,13 @@ class HomeController extends Controller
   }
 
   /**
-  * Método de ejemplo con parámetro
+  * Método de ejemplo con model. Obtiene un usuario segun ID
   */
-  public function mostrar($param)
+  public function usuario($param)
   {
+    $res = $this->model->getUser($param);
+    $this->nombre = $res['usuario_dev'];
     $this->show();
-    echo "Recibí el parámetro: {$param}"; 
   }
 
 

@@ -14,6 +14,6 @@ class Model
   */
   public function __construct()
   {
-    $this->db = new Mysqli('localhost', 'root', '', 'mi_blog');
+    $this->db = new Mysqli(HOST, USER, PASSWORD, DB_NAME);
   }
 }

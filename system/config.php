@@ -24,3 +24,8 @@ define('CORE', 'system/core/');
 //////////////////////////////////////
 // Valores de base de datos
 /////////////////////////////////////
+
+define('HOST', 'localhost');
+define('USER', 'root');
+define('PASSWORD', '');
+define('DB_NAME', 'mi_blog');

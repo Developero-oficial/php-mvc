@@ -20,6 +20,7 @@ define('PATH_CONTROLLERS', 'app/controllers/');
 /////////////////////////////////////
 
 define('CORE', 'system/core/');
+define('DEFAULT_CONTROLLER', 'Home');
 
 //////////////////////////////////////
 // Valores de base de datos

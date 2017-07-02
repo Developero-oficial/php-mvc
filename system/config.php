@@ -15,6 +15,8 @@ define('PATH_VIEWS', 'php-mvc/app/views/');
 
 define('PATH_CONTROLLERS', 'app/controllers/');
 
+define('HELPER_PATH', 'system/helpers/');
+
 //////////////////////////////////////
 // Valores de core
 /////////////////////////////////////

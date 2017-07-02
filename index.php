@@ -1,4 +1,6 @@
 <?php
+define('BASEPATH', true);
+
 require 'system/config.php';
 require 'system/core/autoload.php';
 

@@ -36,3 +36,9 @@ define('HOST', 'localhost');
 define('USER', 'root');
 define('PASSWORD', '');
 define('DB_NAME', 'mi_blog');
+
+//////////////////////////////////////
+// Valores configuracion
+/////////////////////////////////////
+
+define('ERROR_REPORTING_LEVEL', -1);

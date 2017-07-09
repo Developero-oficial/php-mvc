@@ -11,15 +11,15 @@ define('URI', $_SERVER['REQUEST_URI']);
 // Valores de rutas
 /////////////////////////////////////
 
+define('FOLDER_PATH', '/php-mvc');
+
 define('ROOT', $_SERVER['DOCUMENT_ROOT']);
 
-define('PATH_VIEWS', 'php-mvc/app/views/');
+define('PATH_VIEWS', FOLDER_PATH . '/app/views/');
 
 define('PATH_CONTROLLERS', 'app/controllers/');
 
 define('HELPER_PATH', 'system/helpers/');
-
-define('FOLDER_PATH', '/php-mvc');
 
 //////////////////////////////////////
 // Valores de core

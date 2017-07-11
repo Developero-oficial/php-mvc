@@ -15,7 +15,7 @@ class MainController extends Controller
   {
     $this->session = new Session();
     $this->session->init();
-    if($this->session->getStatus() === 1 || !$this->session->get('email'))
+    if($this->session->getStatus() === 1 || empty($this->session->get('email')))
       exit('Acceso denegado');
   }
 
@@ -23,6 +23,12 @@ class MainController extends Controller
   {
     $params = array('email' => $this->session->get('email'));
     $this->render(__CLASS__, $params);
+  }
+
+  public function logout()
+  {
+    $this->session->close();
+    header('location: /php-mvc/login');
   }
 
 }

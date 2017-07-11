@@ -7,6 +7,8 @@ defined('BASEPATH') or exit('No se permite acceso directo');
 
 define('URI', $_SERVER['REQUEST_URI']);
 
+define('REQUEST_METHOD', $_SERVER['REQUEST_METHOD']);
+
 //////////////////////////////////////
 // Valores de rutas
 /////////////////////////////////////
@@ -20,6 +22,8 @@ define('PATH_VIEWS', FOLDER_PATH . '/app/views/');
 define('PATH_CONTROLLERS', 'app/controllers/');
 
 define('HELPER_PATH', 'system/helpers/');
+
+define('LIBS_ROUTE', ROOT . FOLDER_PATH . '/system/libs/');
 
 //////////////////////////////////////
 // Valores de core
@@ -35,7 +39,7 @@ define('DEFAULT_CONTROLLER', 'Home');
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASSWORD', '');
-define('DB_NAME', 'mi_blog');
+define('DB_NAME', 'curso_mvc');
 
 //////////////////////////////////////
 // Valores configuracion

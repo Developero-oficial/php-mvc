@@ -61,11 +61,14 @@ class Router
   }
 
   /**
-   * Asigna el valor del parametro si existe
+   * Asigna el valor del parametro si existe segun el metodo de peticion
    */
   public function setParam()
   {
-    $this->param = ! empty($this->uri[4]) ? $this->uri[4] : '';
+    if(REQUEST_METHOD === 'POST')
+      $this->param = $_POST;
+    else if (REQUEST_METHOD === 'GET')
+      $this->param = ! empty($this->uri[4]) ? $this->uri[4] : '';
   }
 
   /**

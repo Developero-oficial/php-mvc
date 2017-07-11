@@ -15,7 +15,6 @@ class MainController extends Controller
   {
     $this->session = new Session();
     $this->session->init();
-    $this->session->close();
     if($this->session->getStatus() === 1 || !$this->session->get('email'))
       exit('Acceso denegado');
   }

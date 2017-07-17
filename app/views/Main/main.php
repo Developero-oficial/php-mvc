@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
+  <title>Main</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
@@ -16,6 +16,8 @@
       </div>
 
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="<?= FOLDER_PATH . '/main/form' ?>">Add client</a></li>
+        <li><a href="<?= FOLDER_PATH . '/main/clientsList' ?>">Clients list</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $email ?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -28,15 +30,9 @@
   </nav>
 
   <div class="container">
-    
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container text-center">
-        <h1>Sesión iniciada</h1>
-        <p>Puedes modificar esta página como desees.</p>
-      </div>
-    </div>
-
+    <?php !empty($show_form) ? require 'app/views/Main/form.php' : '' ?>
+    <?php !empty($show_edit_form) ? require 'app/views/Main/edit_form.php' : '' ?>
+    <?php !empty($show_clients_list) ? require 'app/views/Main/clients_list.php' : '' ?>
   </div>
 
   <!-- Jquery  -->

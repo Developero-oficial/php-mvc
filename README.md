@@ -39,3 +39,12 @@ Ejemplo demo para acceder estando en un host local renderizando con parámetros 
 
 + Model class: https://goo.gl/6PDYPn
 
++ Mejoras: https://goo.gl/vkKNzK
+
++ Login con sesiones orientado a objetos: https://goo.gl/hsUHPa
+
++ Login con sesiones métodos del controlador: https://goo.gl/bejyeC
+
++ Login con sesiones model class y consulta sql: https://goo.gl/3FUmY5
+
++ Login con sesiones Session class: https://goo.gl/fC1ZRe

@@ -1,0 +1,71 @@
+body{
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 1px 2px #660066;
+}
+
+.button{
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #000009;
+    border: 1px solid #fff;
+}
+
+.button :hover{
+    background: #000009;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.button :visited{
+    background: #000225;
+    opacity: 1;
+}
+.header {
+    background: linear-gradient(-90deg, #33ccff, #000066,#9999ff, #660066);
+    -webkit-animation: header 20s ease infinite;
+    -moz-animation: header 20s ease infinite;
+    animation: header 20s ease infinite;
+    background-size: 500% 500%;
+}
+
+@-webkit-keyframes header{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+
+@-moz-keyframes header{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+
+@keyframes header{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
